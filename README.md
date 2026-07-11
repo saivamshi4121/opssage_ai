@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpsSage Web Platform
+
+OpsSage is a next-generation platform for operations, SRE (Site Reliability Engineering), and DevOps teams. It provides powerful tools for monitoring, automated remediation, and AI-driven root cause analysis, enabling teams to ship with confidence and prevent incidents before they impact users.
+
+## Features
+
+- **Real-time Monitoring**: Sub-second visibility into distributed systems.
+- **Automated Remediation**: Self-healing workflows for common infrastructure issues.
+- **AI Root Cause Analysis**: Proprietary ML models that correlate logs, metrics, and traces to pinpoint failures quickly.
+
+## Tech Stack
+
+This project is built using modern web technologies:
+- **Next.js 15+** - React Framework for production.
+- **Tailwind CSS v4** - Utility-first CSS framework for rapid UI development.
+- **React** - JavaScript library for building user interfaces.
+- **TypeScript** - Strongly typed programming language that builds on JavaScript.
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/`: Next.js App Router containing pages and layouts.
+- `components/`: Reusable React components (Navbar, Hero, FeatureCard, Footer, etc.).
+- `public/`: Static assets.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Copyright © OpsSage Inc. All rights reserved.

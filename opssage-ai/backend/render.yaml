@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: opssage-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: MONGODB_URL
+        sync: false  # Set your Atlas connection string in Render dashboard
+      - key: MONGODB_DB_NAME
+        value: opssage
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: gpt-4o-mini
+      - key: LOG_LEVEL
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: https://opssage.vercel.app

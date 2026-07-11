@@ -1,0 +1,22 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# MongoDB / ODM
+motor==3.3.2
+pymongo==4.6.1
+beanie==1.25.0
+
+# ML / embeddings / similarity
+numpy>=1.24.0
+scikit-learn>=1.3.0
+sentence-transformers>=2.6.0
+
+# LLM
+openai>=1.12.0
+
+# IO
+requests>=2.31.0
+python-multipart>=0.0.9
+pymupdf>=1.24.0
